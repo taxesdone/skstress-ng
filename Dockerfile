@@ -1,4 +1,4 @@
-FROM ppc64le/centos
+FROM registry.redhat.io/ubi8/ubi
 ADD /libbsd-0.8.3-1.fc25.ppc64le.rpm /libbsd-0.8.3-1.fc25.ppc64le.rpm
 RUN yum localinstall -y libbsd-0.8.3-1.fc25.ppc64le.rpm
 ADD /stress-ng-0.07.29-1.fc25.ppc64le.rpm /stress-ng-0.07.29-1.fc25.ppc64le.rpm
